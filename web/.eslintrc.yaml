@@ -1,0 +1,6 @@
+# Node specific rules and configuration.
+settings:
+  import/resolver: webpack
+
+env:
+  browser: true
