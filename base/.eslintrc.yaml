@@ -1,8 +1,5 @@
 # Base eslint rules that are applicable to all project types.
-#
-# The baseline environment is whatever can be parsed by our version of Node,
-# but should not include any Nodeisms.  Unfortunately the base eslint parser
-# can't handle that.
+
 parser: babel-eslint
 
 extends:
@@ -14,6 +11,9 @@ plugins:
 
 settings:
   import/parser: babel-eslint
+
+env:
+  es6: true
 
 rules:
   # http://eslint.org/docs/rules/#possible-errors
@@ -122,7 +122,9 @@ rules:
   # https://github.com/babel/eslint-plugin-babel#rules
   babel/array-bracket-spacing: [2, 'never']
   babel/arrow-parens: [2, 'as-needed']
+  babel/generator-star-spacing: [2, 'before']
   babel/new-cap: [2, {newIsCap: true, capIsNew: true}]
+  babel/no-await-in-loop: 2
   # TODO: This would be ideal (so we can easily disambiguate between code blocks
   # and object literals), but it is enforced for imports, too.
   # babel/object-curly-spacing: [2, 'never']
