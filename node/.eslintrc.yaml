@@ -1,0 +1,10 @@
+# Node specific rules and configuration.
+settings:
+  import/resolver: node
+
+env:
+  node: true
+
+rules:
+  # http://eslint.org/docs/rules/#nodejs-and-commonjs
+  no-path-concat: 2
