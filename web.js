@@ -1,9 +1,9 @@
 const opine = require('opine');
 
-module.exports = class Node extends opine.Model(__dirname, 'web') {
+module.exports = class Web extends opine.Model(__dirname, 'web') {
 
   compose() {
-    this.composeWith(require('./base'));
+    this.composeWith(require('./babel'));
   }
 
 }
