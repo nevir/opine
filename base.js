@@ -1,6 +1,6 @@
 const opine = require('opine');
 
-module.exports = class Base extends opine.makeModel(__dirname, 'base') {
+module.exports = class Base extends opine.buildBlueprint(__dirname, 'base') {
 
   extraContext() {
     return {
