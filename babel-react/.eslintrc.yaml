@@ -1,6 +1,16 @@
+extends:
+- plugin:react/recommended
+
+plugins:
+- react
+
 # Node specific rules and configuration.
 settings:
   import/resolver: webpack
+
+parserOptions:
+  ecmaFeatures:
+    jsx: true
 
 env:
   browser: true
