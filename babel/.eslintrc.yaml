@@ -1,5 +1,3 @@
-# Base eslint rules that are applicable to all project types.
-
 parser: babel-eslint
 
 extends:

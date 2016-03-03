@@ -1,0 +1,11 @@
+plugins:
+- react-native
+
+settings:
+  # React Native's packager follows Node's package resolution approach.
+  import/resolver: node
+
+rules:
+  # https://github.com/Intellicode/eslint-plugin-react-native#list-of-supported-rules
+  react-native/no-unused-styles: 2
+  react-native/split-platform-components: 2

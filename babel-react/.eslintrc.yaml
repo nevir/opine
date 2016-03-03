@@ -4,7 +4,6 @@ extends:
 plugins:
 - react
 
-# Node specific rules and configuration.
 settings:
   import/resolver: webpack
 
@@ -14,3 +13,29 @@ parserOptions:
 
 env:
   browser: true
+
+rules:
+  # https://github.com/yannickcr/eslint-plugin-react#list-of-supported-rules
+  react/forbid-prop-types: [2, {forbid: ['array', 'object']}]
+  react/no-multi-comp: [2, {ignoreStateless: true}]
+  react/no-string-refs: 2
+  react/prefer-es6-class: 2
+  react/react-in-jsx-scope: 0
+  react/prefer-stateless-function: 2
+  react/require-extension: 2
+  react/self-closing-comp: 2
+  react/sort-comp: 2
+  react/sort-prop-types: [2, {requiredFirst: true, ignoreCase: true}]
+  react/wrap-multilines: 2
+
+  # https://github.com/yannickcr/eslint-plugin-react#jsx-specific-rules
+  react/jsx-boolean-value: [2, 'always']
+  react/jsx-closing-bracket-location: [2, 'tag-aligned']
+  react/jsx-curly-spacing: [2, 'never']
+  react/jsx-equals-spacing: [2, 'never']
+  react/jsx-handler-names: [2, {eventHandlerPrefix: '_on'}]
+  react/jsx-indent-props: [2, 2]
+  react/jsx-indent: [2, 2]
+  react/jsx-no-bind: [2, {ignoreRefs: true}]
+  react/jsx-pascal-case: 2
+  react/jsx-space-before-closing: [2, 'always']

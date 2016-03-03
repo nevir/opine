@@ -1,4 +1,3 @@
-# Node specific rules and configuration.
 settings:
   import/resolver: node
 
